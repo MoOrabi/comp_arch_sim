@@ -74,7 +74,7 @@ class CustomTable(tk.Frame):
             self.my_game.tag_configure(i, background="white")
         self.set_background_color('white')
   
-
+"""
 def func1():
     table.change_row_color(row=4,color='red')
 def func2():
@@ -124,3 +124,4 @@ table.set_background_color('blue')
 #table.edit_item(row='2', column='player_name', value='Samurai')
 
 root.mainloop()
+"""
