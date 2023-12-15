@@ -229,6 +229,10 @@ instruction_memory_idx.config(yscrollcommand=scrollbar.set)
 
 scrollbar.config(command=lambda *args: (instruction_memory_idx.yview(*args), instruction_memory.yview(*args)))
 
+instruction_memory_idx.bind("<Down>", on_down_key)
+instruction_memory.bind("<Down>", on_down_key)
+instruction_memory_idx.bind("<Up>", on_up_key)
+instruction_memory.bind("<Up>", on_up_key)
 
 instruction_reg = tk.Label(window, width=21, height=1, background='#ffffff', text="", fg="#172f5f")
 instruction_reg.place(x=606, y=121)
@@ -383,10 +387,7 @@ data_memory.config(yscrollcommand=scrollbar2.set)
 scrollbar2.config(command=lambda *args: (data_memory_idx.yview(*args), data_memory.yview(*args)))
 
 
-instruction_memory_idx.bind("<Down>", on_down_key)
-instruction_memory.bind("<Down>", on_down_key)
-instruction_memory_idx.bind("<Up>", on_up_key)
-instruction_memory.bind("<Up>", on_up_key)
+
 
 data_memory_idx.bind("<Down>", on_down_key2)
 data_memory.bind("<Down>", on_down_key2)
